@@ -11,13 +11,13 @@
 
 using namespace std;
 
-inline void err_exit(const int err)
+static inline void err_exit(const int err)
 {
     cerr << strerror(err) << endl;
     exit(1);
 }
 
-int main()
+int pipe_read_test_main()
 {
     int pfds[2] = {0};
 
